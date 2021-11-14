@@ -1,0 +1,17 @@
+{
+  "name": "bot-framework",
+  "version": "1.0.0",
+  "description": "A simple discord bot framework for discord.js",
+  "main": "index.js",
+  "module": "true",
+  "repository": "https://github.com/matta-official/bot-framework.git",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^13.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.4.1"
+  }
+}
