@@ -33,6 +33,7 @@ const client = new Bot({
 	owner: 'YOUR_OWNER_ID',
 	token: 'YOUR_BOT_TOKEN',
 	command_dir: './commands',
+	component_dir: './components',
 	event_dir: './events',
 	config: './config.yaml',
 });
@@ -50,6 +51,21 @@ Contributions are always welcome! More info on how to contribute coming soon™.
 
 # Reference
 
+## Bot
+
+When creating a bot, you can provide the following options:
+
+| Option          | Description                               | Default        | Required |
+| --------------- | ----------------------------------------- | -------------- | -------- |
+| `owner`         | The ID of the bot owner                   |                | `true`   |
+| `token`         | The bot token                             |                | `true`   |
+| `guild`         | The ID of the guild to deploy commands in |                | `false`  |
+| `command_dir`   | The directory where commands are stored   | `./commands`   | `false`  |
+| `component_dir` | The directory where components are stored | `./components` | `false`  |
+| `event_dir`     | The directory where events are stored     | `./events`     | `false`  |
+| `config`        | The path to the config file               | `{}`           | `false`  |
+| `force`         | Force the bot to refresh the commands     | `false`        | `false`  |
+
 ## Commands
 
 Create a command by doing the following:
@@ -60,6 +76,7 @@ import { Command } from 'bot-framework';
 export default new Command({
 	name: 'ping',
 	description: 'Responds with pong!',
+	// Also supports 'options', 'permissions', 'type'
 
 	callback: (client, interaction) => {
 		interaction.reply('Pong!');
@@ -93,7 +110,7 @@ import { Event } from 'bot-framework';
 
 export default new Event({
 	name: 'ready',
-	once: true,
+	once: true, // omit this to listen for multiple events
 
 	callback: (client, ...args) => {
 		console.log(`Logged in as ${client.user.tag}!`);
