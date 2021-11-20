@@ -1,4 +1,5 @@
 trailingComma: 'es5'
+lineWidth: 110
 singleQuote: true
 useTabs: true
 overrides:
