@@ -1,5 +1,5 @@
 {
-  "name": "@discord-bot/framework",
+  "name": "bot-framework",
   "version": "1.0.0",
   "description": "A simple discord bot framework for discord.js",
   "main": "index.js",
