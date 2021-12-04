@@ -12,10 +12,10 @@ A simple Discord bot command/event framework. Supporting slash commands.
 
 ## Intallation
 
-Install from [npm](https://www.npmjs.com/package/bot-framework)
+Install from [npm](https://www.npmjs.com/package/@matta-official/bot-framework)
 
 ```bash
-npm i bot-framework
+npm i @matta-official/bot-framework
 ```
 
 Install dependencies
@@ -56,15 +56,15 @@ Contributions are always welcome! More info on how to contribute coming soon™.
 When creating a bot, you can provide the following options:
 
 | Option          | Description                               | Default        | Required |
-| --------------- | ----------------------------------------- | -------------- | -------- |
-| `owner`         | The ID of the bot owner                   |                | `true`   |
-| `token`         | The bot token                             |                | `true`   |
-| `guild`         | The ID of the guild to deploy commands in |                | `false`  |
-| `command_dir`   | The directory where commands are stored   | `./commands`   | `false`  |
-| `component_dir` | The directory where components are stored | `./components` | `false`  |
-| `event_dir`     | The directory where events are stored     | `./events`     | `false`  |
-| `config`        | The path to the config file               | `{}`           | `false`  |
-| `force`         | Force the bot to refresh the commands     | `false`        | `false`  |
+| --------------- | ----------------------------------------- | -------------- | :------: |
+| `owner`         | The ID of the bot owner                   |                | ✔  |
+| `token`         | The bot token                             |                | ✔  |
+| `guild`         | The ID of the guild to deploy commands in |                | ✔  |
+| `command_dir`   | The directory where commands are stored   | `./commands`   | ✔  |
+| `component_dir` | The directory where components are stored | `./components` | ✔  |
+| `event_dir`     | The directory where events are stored     | `./events`     | ✔  |
+| `config`        | The path to the config file               | `{}`           | ✔  |
+| `force`         | Force the bot to refresh the commands     | `false`        | ✔  |
 
 ## Commands
 
